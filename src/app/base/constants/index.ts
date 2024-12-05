@@ -22,4 +22,5 @@ export const routes = {
     transactions: '/settings/manage-payment/transactions',
     paymentMethods: '/settings/manage-payment/payment-methods',
     discountCodes: '/settings/discount-codes',
+    supportTicket: '/supportTicket',
 };

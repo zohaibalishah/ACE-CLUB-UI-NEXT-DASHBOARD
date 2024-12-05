@@ -24,7 +24,7 @@ const RolesAndPermissions = (): React.ReactElement => {
     ];
     return (
         <section>
-            <div className="flex justify-end gap-3 sm:gap-5 mt-5 sm:mt-0">
+            <div className="flex justify-end flex-wrap gap-3 sm:gap-5 mt-5 sm:mt-0">
                 <AddNewRole />
                 <AddNewUser />
             </div>

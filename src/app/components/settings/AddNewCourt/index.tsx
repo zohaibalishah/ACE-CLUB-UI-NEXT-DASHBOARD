@@ -5,6 +5,7 @@ import { AppButton, Facilities, Modal, Typography } from '../../common';
 import { FiPlus } from 'react-icons/fi';
 import { SelectField, TextField } from '../../form';
 import { Checkbox } from '../../form/Checkbox';
+import { RxCrossCircled } from 'react-icons/rx';
 
 export const AddNewCourt = (): React.ReactElement => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -13,7 +14,7 @@ export const AddNewCourt = (): React.ReactElement => {
         <>
             <AppButton
                 variant="primary"
-                className="w-full max-w-[170px] max-h-11 ml-auto gap-1"
+                className="w-full max-w-[170px] max-h-11 ml-auto gap-1 mt-3 sm:mt-0"
                 onClick={() => {
                     setIsOpen(true);
                 }}
@@ -30,34 +31,34 @@ export const AddNewCourt = (): React.ReactElement => {
                     <div className="space-y-5">
                         <SelectField placeholder="Sport" />
                         <TextField placeholder="Price" />
-                        <div className="flex gap-5">
+                        <div className="flex flex-wrap gap-5">
                             <TextField
                                 placeholder="Price for 60min"
-                                className="flex-1"
+                                className="w-full sm:flex-1"
                             />
                             <TextField
                                 placeholder="Player $"
-                                className="max-w-[193px]"
+                                className="w-full sm:max-w-[193px]"
                             />
                         </div>
-                        <div className="flex gap-5">
+                        <div className="flex flex-wrap gap-5">
                             <TextField
                                 placeholder="Price for 90min"
-                                className="flex-1"
+                                className="w-full sm:flex-1"
                             />
                             <TextField
                                 placeholder="Player $"
-                                className="max-w-[193px]"
+                                className="w-full sm:max-w-[193px]"
                             />
                         </div>
-                        <div className="flex gap-5">
+                        <div className="flex flex-wrap gap-5">
                             <TextField
                                 placeholder="Price for 120min"
-                                className="flex-1"
+                                className="w-full sm:flex-1"
                             />
                             <TextField
                                 placeholder="Player $"
-                                className="max-w-[193px]"
+                                className="w-full sm:max-w-[193px]"
                             />
                         </div>
                         <div className="rounded-xl bg-boxColorDark p-6">
@@ -100,10 +101,20 @@ export const AddNewCourt = (): React.ReactElement => {
                             />
                         </div>
                     </div>
-                    <AppButton className="max-w-[243px] w-full mt-10">
+                    <AppButton className="w-full sm:max-w-[243px] mt-10">
                         Create
                     </AppButton>
                 </form>
+
+                {/*  cancel button */}
+                <button
+                    className="absolute top-3 right-4 md:hidden"
+                    onClick={() => {
+                        setIsOpen(false);
+                    }}
+                >
+                    <RxCrossCircled className="text-secondary text-2xl" />
+                </button>
             </Modal>
         </>
     );

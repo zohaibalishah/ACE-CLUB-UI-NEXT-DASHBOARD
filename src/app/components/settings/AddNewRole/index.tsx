@@ -73,7 +73,7 @@ export const AddNewRole = (): React.ReactElement => {
                     </div>
 
                     {/* end */}
-                    <AppButton className="max-w-[243px] w-full mt-10">
+                    <AppButton className="w-full sm:max-w-[243px] mt-10">
                         Create
                     </AppButton>
                 </form>

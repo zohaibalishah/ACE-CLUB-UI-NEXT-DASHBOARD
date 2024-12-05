@@ -50,7 +50,7 @@ export const BookingReportChart = (): React.ReactElement => (
                 <Typography variant="h5Bold" className="text-secondary">
                     Number of booking
                 </Typography>
-                <div className="flex gap-x-3">
+                <div className="hidden xl:flex gap-x-3">
                     <input
                         type="date"
                         className="text-secondary bg-boxOutline text-xs h-9 rounded-xl px-3 focus:outline-none"
@@ -67,7 +67,7 @@ export const BookingReportChart = (): React.ReactElement => (
                     width={150}
                     height={40}
                     data={data}
-                    margin={{ bottom: 0, top: 20, left: 10 }}
+                    margin={{ bottom: 15, top: 20, left: 10 }}
                 >
                     <Bar
                         dataKey="value"

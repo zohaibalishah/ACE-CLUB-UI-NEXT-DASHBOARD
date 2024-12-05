@@ -57,12 +57,12 @@ export const BookingDetails = ({
                 </div>
             ) : (
                 <>
-                    <div className="flex justify-between flex-wrap items-center">
+                    <div className="flex justify-between flex-wrap items-center pt-5 md:pt-0 w-full">
                         <Typography variant="h5Bold">Booking</Typography>
-                        <div className="flex gap-4 sm:gap-7 items-center pt-5 md:pt-0">
+                        <div className="flex gap-4 sm:gap-7 items-center">
                             <AppButton
                                 variant="primary"
-                                className="w-[155px] ml-auto gap-1 max-h-11"
+                                className="w-[130px] sm:w-[155px] ml-auto gap-1 max-h-9 sm:max-h-11"
                                 onClick={() => {
                                     setIsOpen(true);
                                 }}

@@ -24,7 +24,7 @@ const ChangePassword = (): React.ReactElement => (
             </div>
             <PasswordField placeholder="New password" className="w-full mt-6" />
             <PasswordField placeholder="Confirm password" className="w-full" />
-            <Link href={routes.verifyOtp} className="mt-10 w-full">
+            <Link href={routes.login} className="mt-10 w-full">
                 <AppButton className="w-full" type="submit">
                     Update
                 </AppButton>

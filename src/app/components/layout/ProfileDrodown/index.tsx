@@ -17,15 +17,15 @@ const links = [
         link: routes.basicInformation,
         icon: Icons.settings,
     },
-    { name: 'Manage profile', link: '#', icon: Icons.mp },
+    { name: 'Manage profile', link: routes.basicInformation, icon: Icons.mp },
     {
         name: 'Activity log',
-        link: '#',
+        link: routes.activityLogs,
         icon: Icons.al,
     },
     {
         name: 'Support ticket',
-        link: '#',
+        link: routes.supportTicket,
         icon: Icons.st,
     },
 ];

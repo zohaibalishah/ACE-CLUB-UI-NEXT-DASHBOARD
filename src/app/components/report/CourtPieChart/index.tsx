@@ -15,11 +15,11 @@ const COLORS = data?.map(item => item.color);
 
 export const CourtPieChart = (): React.ReactElement => (
     <div className="overflow-hidden overflow-x-auto ">
-        <div className="w-full h-[320px] sm:h-[391px] border-2 border-boxOutline py-5 px-5 lg:px-8 bg-boxColorDark rounded-xl ">
+        <div className="w-full sm:h-[391px] border-2 border-boxOutline py-5 px-5 lg:px-8 bg-boxColorDark rounded-xl ">
             <Typography variant="h5Bold" className="text-secondary">
                 Revenue by Court
             </Typography>
-            <div className="flex items-center pt-10 gap-5 xl:gap-16 xl:px-8">
+            <div className="flex sm:flex-row flex-col items-center pt-10 gap-5 xl:gap-16 xl:px-8">
                 <div className="relative w-[227px] h-[227px]">
                     <ResponsiveContainer width={'100%'} height={'100%'}>
                         <PieChart width={233} height={233}>
@@ -59,7 +59,7 @@ export const CourtPieChart = (): React.ReactElement => (
                 </div>
 
                 {/* labels */}
-                <div className="flex flex-col gap-7 flex-1">
+                <div className="flex flex-row flex-wrap sm:flex-col gap-4 sm:gap-7 flex-1">
                     {data.map((label, index) => (
                         <div
                             key={index}

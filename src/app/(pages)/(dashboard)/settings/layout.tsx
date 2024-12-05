@@ -30,13 +30,16 @@ export default function Layout({ children }: Props): React.ReactElement {
                     <Typography variant="h5Bold">Settings</Typography>
                 </div>
                 <ul
-                    className={`xl:mt-10 flex flex-col gap-6 max-w-[350px] fixed top-0 h-screen overflow-y-auto px-5 xl:px-0 py-8 xl:py-0 xl:h-auto left-0 bg-boxColorDark xl:bg-transparent z-10 xl:static transition-all duration-500 ${show ? 'translate-x-0 visible opacity-100 gap-7 border-2 border-boxOutline w-[350px]' : '-translate-x-full invisible opacity-0 xl:translate-x-0 xl:visible xl:opacity-100 xl:w-[300px]'}`}
+                    className={`xl:mt-10 flex flex-col gap-6 max-w-[350px] fixed top-0 h-screen overflow-y-auto px-5 xl:px-0 pt-12 pb-8 xl:py-0 xl:h-auto left-0 bg-boxColorDark xl:bg-transparent z-10 xl:static transition-all duration-500 ${show ? 'translate-x-0 visible opacity-100 gap-7 border-2 border-boxOutline w-[350px]' : '-translate-x-full invisible opacity-0 xl:translate-x-0 xl:visible xl:opacity-100 xl:w-[300px]'}`}
                 >
                     {settingMenu.map((item, index) => (
                         <Link
                             key={index}
                             href={item.route}
                             className="w-full xl:w-auto"
+                            onClick={() => {
+                                setShow(false);
+                            }}
                         >
                             <li
                                 className={`flex items-center space-x-3 border border-boxOutline hover:bg-primary transition-colors duration-300 px-8 w-full xl:w-auto h-[46px] rounded-xl ${isActive(item.route) ? 'bg-primary' : 'bg-transparent'}`}

@@ -46,7 +46,9 @@ const Navbar: React.FC = () => {
                             className="w-4 md:w-auto"
                         />
                     </button>
-                    <ClubDropdown />
+                    <div className="hidden md:block">
+                        <ClubDropdown />
+                    </div>
                     <ProfileDropdown />
                 </div>
             </div>

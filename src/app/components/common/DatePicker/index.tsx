@@ -32,7 +32,7 @@ export const DatePicker = (): React.ReactElement => {
                     <IoIosArrowForward />
                 </Button>
             </PopoverTrigger>
-            <PopoverContent className="w-auto p-0 bg-boxOutline border z-10">
+            <PopoverContent className="w-auto p-0 bg-boxOutline border z-20">
                 <Calendar
                     mode="single"
                     selected={date}

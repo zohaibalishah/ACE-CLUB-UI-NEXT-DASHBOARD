@@ -62,7 +62,7 @@ export const ReportStatistics = (): React.ReactElement => (
                     startIcon={<MdLibraryBooks />}
                 />
             </div>
-            <div className="flex gap-5 justify-end ml-auto">
+            <div className="hidden sm:flex gap-5 justify-end ml-auto ">
                 <FilterSelect placeholder="Current week" />
             </div>
         </div>

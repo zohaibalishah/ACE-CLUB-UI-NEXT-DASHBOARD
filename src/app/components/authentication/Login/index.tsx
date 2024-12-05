@@ -33,8 +33,7 @@ export const Login = (): React.ReactElement => (
                             Welcome Back, login
                         </Typography>
                         <Typography>
-                            Login to admin dashboard to see and mange app and
-                            court owner
+                            Login to admin dashboard to see and mange app.
                         </Typography>
                         and court owner
                     </div>

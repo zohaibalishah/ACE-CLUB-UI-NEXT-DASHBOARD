@@ -10,7 +10,7 @@ const ReportPege = (): React.ReactElement => (
     <section className="pb-20">
         <ReportStatistics />
         <CourtsRevenue />
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 mt-7">
+        <div className="grid grid-cols-1 lg:grid-cols-2 sm:gap-7 mt-7">
             <BookingReportChart />
             <CourtPieChart />
         </div>
